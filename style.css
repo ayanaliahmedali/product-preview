@@ -1,0 +1,112 @@
+:root {
+    /* primary */
+    --clr-primary-100:hsl(158, 36%, 37%);
+    --clr-primary-200:hsl(30, 38%, 92%);
+
+    /* neutral */
+    --clr-neutral-100: hsl(212, 21%, 14%);
+    --clr-neutral-200: hsl(228, 12%, 48%);
+    --clr-neutral-300: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--clr-primary-200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    margin: 6em;
+    background-color: var(--clr-neutral-300);
+    border-radius: 12px;
+}
+
+.info  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: var(--clr-neutral-200);
+    padding-left: 4px;
+}
+
+img {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    width: 90%;
+}
+
+span {
+    font-size: 29px;
+    color: var(--clr-primary-100);
+}
+
+span.price {
+    font-size: 12px;
+    padding-left: 55px;
+}
+
+button {
+    margin-top: 20px;
+    color: white;
+    background-color: var(--clr-primary-100);
+    border: none;
+    width: 90%;
+    padding: 9px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  button:hover {
+    background-color: hsl(115, 94%, 13%);
+  }
+  button img {
+    width: 15px;
+    padding-right: 12px;
+  }
+
+  .section-1 {
+    font-family: 'Fraunces', serif;
+    width: 70%;
+    padding-right: 50px;
+  }
+
+  p.paragraph {
+     color: var(--clr-neutral-200);
+     line-height: 25px;
+     font-size: 15px;
+  }
+
+  .img {
+    display: none;
+  }
+
+  @media screen and (max-width:767px) {
+      .container {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      body {
+        background-image: url(./images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+      }
+
+      .head-img {
+        display: none;
+      }
+
+      .section-1 {
+        padding-left: 40px;
+      }
+
+      .img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+  }
